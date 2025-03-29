@@ -2,21 +2,31 @@ package entities;
 
 public class Student {
 	public String name;
-	public double firstGrade;
-	public double secondGrade;
-	public double thirdGrade;
-	
-	public double finalGrade() {
-		return firstGrade + secondGrade + thirdGrade;
+	public String email;
+	public int room;
+
+	public String getName() {
+		return name;
 	}
-	
-	public void checkGrade(double grade) {
-		if(grade >= 60) {
-			System.out.println("PASS");
-		} else {
-			System.out.println("FAILED");
-			System.out.printf("MISSING %.2f POINTS%n", 60.00 - grade);
-		}
+
+	public void setName(String name) {
+		this.name = name;
 	}
-	
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public int getRoom() {
+		return room;
+	}
+
+	public void setRoom(int room) {
+		this.room = room;
+	}
+
 }
